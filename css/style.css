@@ -83,7 +83,7 @@ a.button{
 }
 
 a.button:hover {
-    background-color: #fcdddc; /* Green */
+    background-color: #f3f0eb; /* Green */
     color: black;
   }
 
