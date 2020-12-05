@@ -28,10 +28,13 @@ body{
 
 p{
     font-weight: normal;
+	  font-size: 15px;
+
 }
 
 #container {
 	text-align: left;
+	
 }
 
 #text {
