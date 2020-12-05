@@ -20,7 +20,7 @@ body{
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;    
-  font-family: 'comfortaa', sans-serif';
+  font-family: 'comfortaa', sans-serif;
   font-size: 20px;
   color: black;
   margin: 0 auto;
@@ -40,7 +40,7 @@ p{
 #text {
 	display: inline-block;
     vertical-align: middle;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'comfortaa', sans-serif;
     font-weight: bold;
 	color: black;
 	letter-spacing: 2px;
