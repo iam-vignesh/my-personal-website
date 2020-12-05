@@ -1,0 +1,112 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to my site</title>
+    <link rel="stylesheet" href="C:\Users\vigneshravi\Downloads\Scripts\HTML\My personal ste\stylesheet.css">
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+</head>
+
+<body>
+
+<div id = "my_title">
+<h2>Hi! I am Vic.</h2>
+<p> living in India | vigneshraviav@gmail.com </p>
+<br>
+</div>
+
+<div id="container">
+    <div id="text"></div><div id="cursor"> </div>
+</div>
+<script>
+    // List of sentences
+var _CONTENT = [ 
+	"I AM A SOLUTION ENGINEER", 
+	"I DO FREELANCE WEB DEVELOPING", 
+	"I MAKE SHORT FILMS", 
+    "I WRITE BLOGS",
+    "I AM A FREELANCE CONTENT WRITER",
+];
+
+// Current sentence being processed
+var _PART = 0;
+
+// Character number of the current sentence being processed 
+var _PART_INDEX = 0;
+
+// Holds the handle returned from setInterval
+var _INTERVAL_VAL;
+
+// Element that holds the text
+var _ELEMENT = document.querySelector("#text");
+
+// Cursor element 
+var _CURSOR = document.querySelector("#cursor");
+
+// Implements typing effect
+function Type() { 
+	// Get substring with 1 characater added
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	// If full sentence has been displayed then start to delete the sentence after some time
+	if(text === _CONTENT[_PART]) {
+		// Hide the cursor
+		_CURSOR.style.display = "inline-block";
+
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 80);
+		}, 1000);
+	}
+}
+
+// Implements deleting effect
+function Delete() {
+	// Get substring with 1 characater deleted
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If current sentence was last then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_CURSOR.style.display = 'inline-block';
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+</script>
+<br>
+<br>
+
+
+<a href="C:\Users\vravi\Downloads\Scripts\my-personal-website\Vignesh Resume.pdf" class="button" target="_blank">DOWNLOAD RESUME</a>
+<a href="https://www.linkedin.com/in/vignesh-ravi-805386182/" class ="button" target="_blank">LINKEDIN</a>
+<br>
+<br>
+
+
+
+
+</body>
+</html>
+
+
+
+

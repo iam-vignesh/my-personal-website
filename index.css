@@ -1,0 +1,86 @@
+html { overflow-y: scroll; overflow-x:hidden; }
+body { position: absolute; }
+
+body{
+  background-color: white; 
+  background-image: url("https://i.imgur.com/1OyZOFJ.jpg");
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 80px;
+  padding-left: 480px;
+}
+
+
+#my_title {
+  border-right: 3px rgba(0,255,0,.75);
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Segoe UI';
+  font-size: 20px;
+  color: black;
+  margin: 0 auto;
+}
+
+p{
+    font-weight: normal;
+}
+
+#container {
+	text-align: left;
+}
+
+#text {
+	display: inline-block;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+	color: black;
+	letter-spacing: 2px;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+	background-color:black;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color:black; 
+	}
+}
+
+
+a.button{
+    background-color: black;
+    transition-duration: 0.4s;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+a.button:hover {
+    background-color: #fcdddc; /* Green */
+    color: black;
+  }
+
+
+
+
