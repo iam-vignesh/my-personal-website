@@ -7,7 +7,7 @@ body { position: absolute; }
 body{
   background-color: white; 
   background-image: url("https://i.imgur.com/1OyZOFJ.jpg");
-  background-position: cover;
+  
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 80px;
@@ -24,7 +24,17 @@ body{
   font-size: 20px;
   color: black;
   margin: 0 auto;
+  padding-top: 15px;
 }
+
+
+
+#location:hover{
+  font-size: 25px;
+  color: #3c4d4b;
+}
+
+
 
 p{
     font-weight: normal;
@@ -38,7 +48,8 @@ p{
 }
 
 #text {
-	display: inline-block;
+  display: inline-block;
+  font-size: 21px;
     vertical-align: middle;
     font-family: 'comfortaa', sans-serif;
     font-weight: bold;
@@ -83,31 +94,32 @@ a.button{
 }
 
 a.button:hover {
-    background-color: #e3ddd3; /* Green */
+    background-color:#f3dfb2; /* Green */
     color: black;
   }
 
-nav ul {
+  nav ul {
     position: fixed;
-    text-align: right;
+    text-align: left;
+    top: 0px;
     width: 100%;
     background-color:transparent;
     font-family: "comfortaa",sans-serif; 
-    font-size: 1.2em; 
-    margin: -10px;
-    padding-left: 10px;
+    font-size: 15px; 
+    padding-left: 320px;
+
   }
   
-nav ul li {
+  nav ul li {
     display: inline-block;
     margin: 30px; 
   }
   
-nav ul li a {
+  nav ul li a {
     color: #000;
     text-decoration: none;  
   }
-nav ul li a:hover {
+  nav ul li a:hover {
     color: #ce8888;
   }
 
