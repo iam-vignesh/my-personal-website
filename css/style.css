@@ -164,6 +164,12 @@ a.button:hover {
 
 }
 
+
+a{
+  text-decoration: none;
+  color: rgb(228, 61, 61)
+}
+
 #bore, #showbore, #showbore2{
   font-family: 'comfortaa', sans-serif;
   font-size:15px;
@@ -192,6 +198,8 @@ a.button:hover {
       opacity: 1; 
    } 
 } 
+
+
 
 
 
