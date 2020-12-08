@@ -180,9 +180,7 @@ a{
 
 }
 
-#bore{
-  font-size: 16px;
-}
+
 
 #bore, #location, #location, #my_title{ 
   animation: fadeInAnimation ease 3s;
@@ -198,6 +196,11 @@ a{
       opacity: 1; 
    } 
 } 
+
+
+#bore p{
+  font-size:16px;
+}
 
 
 
