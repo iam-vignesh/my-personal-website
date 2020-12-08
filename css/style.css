@@ -189,6 +189,25 @@ a{
 }
 
 
+
+@media screen and (max-width: 450px) {
+  #mobile{
+    font-size: 6px;
+  }
+  #bore h1{
+    font-size:12px !important;
+  }
+  #bore h4, p{
+    font-size:8px !important;
+  }
+  #bore li{
+    font-size:6px !important;
+  }
+}
+
+
+
+
 @media screen and (max-width: 850px) {
   *{
     margin: 0px !important;
@@ -241,9 +260,8 @@ a{
   #bore h4, p{
     font-size:10px !important;
   }
-  #bore l1{
+  #bore li{
     font-size:10px !important;
-    text-align:left !important;
   }
   #showbore2{
     padding-bottom:15px !important;
