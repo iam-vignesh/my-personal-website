@@ -190,6 +190,27 @@ a{
 
 
 @media screen and (max-width: 850px) {
+  body{ 
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 2s; 
+    animation-fill-mode: forwards; 
+  } 
+  
+  
+  @keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+  } 
+
+
+
+
+
+
   *{
     margin: 0px !important;
     padding: 0px !important;
@@ -262,6 +283,7 @@ a{
     border-radius: none !important;
     color: white;
     padding: 10px 30px !important;
+    margin-top:80px !important;
     text-align: center;
     text-decoration: none;
     display: inline-block;
