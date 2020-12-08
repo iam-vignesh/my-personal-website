@@ -195,14 +195,14 @@ a{
     padding: 0px !important;
   }
   body{
-    background-color: #ffc3b4; 
+    background-color: #d7ede2; 
     background-image:none !important;
     text-align:center !important;
     padding-top:50px !important;
   }
   #my_title{
     text-align:center ;
-    padding-top:15px;
+    padding-top:30px !important;
   }
   h1{
     font-size:15px;
@@ -212,6 +212,7 @@ a{
 
   #mobile{
     font-size:8px !important;
+    line-height: 2 !important;
   }
 
   #desktop{
@@ -228,12 +229,14 @@ a{
     text-align: center !important;
   }
 
-  #navbar{
-    display: none !important;
-  }
+
   #bore, #showbore, #showbore2{
     font-family: 'comfortaa', sans-serif;
     font-size:12px;
+  }
+
+  #showbore{
+    padding-top:60px !important;
   }
   #bore h1{
     font-size:12px !important;
@@ -241,8 +244,12 @@ a{
   #bore h4, p{
     font-size:10px !important;
   }
+  #bore h4{
+    line-height:2 !important;
+  }
   #bore li{
     font-size:10px !important;
+    line-height: 2.5 !important;
   }
   #showbore2{
     padding-bottom:15px !important;
@@ -254,7 +261,7 @@ a{
     border: none;
     border-radius: none !important;
     color: white;
-    padding: 15px 30px !important;
+    padding: 10px 30px !important;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -269,6 +276,41 @@ a.button:hover {
     background-color:#f3dfb2; /* Green */
     color: black;
   }
+
+  nav ul {
+    position: fixed;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    background-color:#014871;
+    font-family: "comfortaa",sans-serif; 
+    font-size: 8px; 
+    padding-top:10px !important;
+    padding-bottom:10px !important;
+
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right:35px !important; 
+    margin-left:35px !important; 
+    padding-left:30px;
+
+
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;  
+  }
+  nav ul li a:hover {
+    color: #ce8888;
+  }
+
+
+
+
+
 }
 
 
@@ -276,6 +318,7 @@ a.button:hover {
   #mobile{
     display:none;
   }
+
 }
 
 
