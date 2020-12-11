@@ -343,7 +343,15 @@ a{
 
   }
 
+  footer{
+    font-size: 8px !important;
+    color: rgb(117, 117, 117);
+    font-family: "comfortaa",sans-serif; 
+    margin-top:35px !important;
+    margin-left:auto;
+    margin-right:auto;
 
+  }
 
 
 
@@ -354,6 +362,12 @@ a{
   #mobile{
     display:none;
   }
+
+  footer{
+    display: none;
+  }
+
+
 
 }
 
