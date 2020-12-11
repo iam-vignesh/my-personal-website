@@ -1,6 +1,21 @@
 @import 'https://fonts.googleapis.com/css?family=Comfortaa:400,700|Fredoka+One|Nunito:400,800,900|Poiret+One|Quicksand:400,500,700';
 
 
+body{ 
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 2s; 
+  animation-fill-mode: forwards; 
+} 
+
+
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+   } 
+} 
 
 
 
