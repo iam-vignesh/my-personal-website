@@ -21,18 +21,16 @@ body{
    } 
 } 
 
+
+
 body{
-  background-color: #f6f3ec; 
   background-image: url("https://i.imgur.com/1OyZOFJ.jpg");
   background-repeat: no-repeat; 
   background-size: 100% 100%;
-  padding: 80px;
+  padding: 80px; 
   padding-left: 480px;
   overflow: hidden;
 }
-
-
-
 
 #my_title {
   border-right: 3px rgba(0,255,0,.75);
@@ -40,10 +38,10 @@ body{
   white-space: nowrap;
   overflow: hidden;    
   font-family: 'comfortaa', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   color: black;
   margin: 0 auto;
-  padding-top: 15px;
+  padding-top: 35px;
 }
 
 #location {
@@ -53,8 +51,8 @@ body{
   font-family: 'comfortaa', sans-serif;
   font-size: 12px;
   color: black;
+  line-height: 2;
 }
-
 
 
 #location:hover{
@@ -134,7 +132,7 @@ a.button:hover {
     background-color:transparent;
     font-family: "comfortaa",sans-serif; 
     font-size: 15px; 
-    padding-left: 320px;
+    padding-left: 300px;
 
   }
   
@@ -159,6 +157,7 @@ a{
 #bore, #showbore, #showbore2{
   font-family: 'comfortaa', sans-serif;
   font-size:15px;
+  line-height: 2;
 }
 
 #showbore, #showbore2{
@@ -188,8 +187,14 @@ a{
   font-size:16px;
 }
 
+#bore h4{
+  line-height: 2;
+}
+
 
 @media screen and (max-width: 850px) {
+
+
   body{ 
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 2s; 
@@ -204,10 +209,20 @@ a{
     100% { 
         opacity: 1; 
      } 
-  } 
+  }  
 
 
 
+  body { 
+    background: linear-gradient(-55deg, #fce1f7, #b4ddf0, #8cd4ee, #abfae7) !important;
+    background-size: 400% 400%;
+  }
+
+  body{
+    background-size: 400% 400%;
+    text-align:center ;
+    padding-top:50px !important;
+  }
 
 
 
@@ -215,12 +230,8 @@ a{
     margin: 0px !important;
     padding: 0px !important;
   }
-  body{
-    background-color: #d7ede2; 
-    background-image:none !important;
-    text-align:center !important;
-    padding-top:50px !important;
-  }
+
+
   #my_title{
     text-align:center ;
     padding-top:30px !important;
@@ -294,14 +305,14 @@ a{
 
   }
 
-a.button:hover {
+  a.button:hover {
     background-color:#f3dfb2; /* Green */
     color: black;
   }
 
   nav ul {
     position: fixed;
-    text-align: center;
+    text-align: right;
     top: 0px;
     width: 100%;
     background-color:#014871;
@@ -309,15 +320,14 @@ a.button:hover {
     font-size: 8px; 
     padding-top:10px !important;
     padding-bottom:10px !important;
+    padding-left:50px !important;
 
   }
   
   nav ul li {
     display: inline-block;
-    margin-right:35px !important; 
-    margin-left:35px !important; 
-    padding-left:30px;
-
+    margin-right:20px !important; 
+    margin-left:20px !important; 
 
   }
   
@@ -327,6 +337,11 @@ a.button:hover {
   }
   nav ul li a:hover {
     color: #ce8888;
+  }
+
+  #hireme, #time, #home{
+    display:none;
+
   }
 
 
