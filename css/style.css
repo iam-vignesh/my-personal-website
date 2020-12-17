@@ -358,7 +358,7 @@ a{
 }
 
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 851px) {
   #mobile{
     display:none;
   }
@@ -366,18 +366,16 @@ a{
   footer{
     display: none;
   }
+
 }
 
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1300px) and (max-width: 2000px) {
 
   body{
-    padding-left:700px;
-    padding-top:220px;
+    padding-left:700px !important;
+    padding-top:220px !important;
   }
-
-
-
 
 }
 
