@@ -75,9 +75,9 @@ p{
 #text {
   display: inline-block;
   font-size: 15px;
-    vertical-align: middle;
-    font-family: 'comfortaa', sans-serif;
-    font-weight: bold;
+  vertical-align: middle;
+  font-family: 'comfortaa', sans-serif;
+  font-weight: bold;
 	color: black;
 	letter-spacing: 2px;
 }
@@ -370,7 +370,7 @@ a{
 }
 
 
-@media screen and (min-width: 1300px) and (max-width: 2000px) {
+@media screen and (min-width: 1400px) and (max-width: 3000px) {
 
   body{
     padding-left:700px !important;
