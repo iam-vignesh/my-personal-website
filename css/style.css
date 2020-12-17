@@ -366,10 +366,22 @@ a{
   footer{
     display: none;
   }
+}
+
+
+@media screen and (min-width: 1200px){
+
+  body{
+    padding-left:700px;
+    padding-top:220px;
+  }
+
 
 
 
 }
+
+
 
 
 

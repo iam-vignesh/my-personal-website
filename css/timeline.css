@@ -68,8 +68,8 @@ p {
   font-weight: bold;
   top: 1em;
   display: block;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-family: 'comfortaa', sans-serif;
+  font-weight: bold;
   font-size: .785rem;
 }
 
@@ -116,6 +116,26 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #ce8888;
+}
+
+
+@media screen and (min-width: 1200px){
+
+  body{
+    padding-left:600px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: .5em;
+  }
+  
+  p {
+    font-family: 'comfortaa', sans-serif;
+    font-size: 1rem;
+  }
+
+
 }
 
 
