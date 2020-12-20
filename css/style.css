@@ -22,25 +22,40 @@ body{
 } 
 
 
+body {
+    background: linear-gradient(-45deg, #000000, #302f2f, #3d3d3d, #000000);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
-body{
-  background-image: url("https://i.imgur.com/9ig7MwK.jpg");
-  background-repeat: no-repeat; 
-  background-size: 100% 100%;
-  padding: 80px; 
-  padding-left: 480px;
-}
+
+
 
 #my_title {
-  border-right: 3px rgba(0,255,0,.75);
+  border-right: 3px rgba(255, 255, 255, 0.75);
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;    
   font-family: 'comfortaa', sans-serif;
   font-size: 22px;
-  color: black;
+  color: rgb(226, 226, 226);
   margin: 0 auto;
   padding-top: 35px;
+  text-align: center;
 }
 
 #location {
@@ -49,14 +64,15 @@ body{
   overflow: hidden;    
   font-family: 'comfortaa', sans-serif;
   font-size: 12px;
-  color: black;
+  color: rgb(255, 255, 255);
   line-height: 2;
+  text-align: center;
 }
 
 
-#location:hover{
-  font-size: 15px;
-  color: #3c4d4b;
+#location p:hover{
+  font-size: 25px;
+  font-weight: bold;
 }
 
 
@@ -68,7 +84,7 @@ p{
 }
 
 #container {
-	text-align: left;
+	text-align: center;
 	
 }
 
@@ -78,7 +94,7 @@ p{
   vertical-align: middle;
   font-family: 'comfortaa', sans-serif;
   font-weight: bold;
-	color: black;
+	color: rgb(255, 255, 255);
 	letter-spacing: 2px;
 }
 
@@ -96,43 +112,43 @@ p{
 		background-color: transparent 
 	}
 	50% { 
-		background-color:black; 
+		background-color:rgb(0, 0, 0); 
 	}
 }
 
 
 a.button{
-    background-color: black;
+    background-color: transparent;
     transition-duration: 0.4s;
     border: none;
     border-radius: 10px;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 4px 2px;
     cursor: pointer;
-
+    padding:8px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width:200px;
 }
 
 a.button:hover {
-    background-color:#f3dfb2; /* Green */
+    background-color:#ffffff; /* Green */
     color: black;
   }
 
-  nav ul {
-    position: fixed;
-    text-align: left;
-    top: 0px;
-    width: 100%;
-    background-color:transparent;
-    font-family: "comfortaa",sans-serif; 
-    font-size: 15px; 
-    padding-left: 300px;
-
+nav ul {
+  text-align: center;
+  top: 0px;
+  width: 100%;
+  background-color:transparent;
+  font-family: "comfortaa",sans-serif; 
+  font-size: 15px; 
+  transition: top 0.3s;
   }
   
   nav ul li {
@@ -141,7 +157,7 @@ a.button:hover {
   }
   
   nav ul li a {
-    color: #363134;
+    color: #fdfdfd;
     text-decoration: none;  
   }
   nav ul li a:hover {
@@ -161,8 +177,14 @@ a{
 
 #showbore, #showbore2{
   color:rgb(238, 68, 68);
+  text-align:center;
 
 }
+
+#showbore2{
+  padding-top:15px;
+}
+
 
 
 
@@ -183,11 +205,22 @@ a{
 
 
 #bore p{
-  font-size:16px;
+  font-size:15px;
+  color: white;
+  text-align:center;
 }
 
-#bore h4{
-  line-height: 2;
+#bore li{
+  font-size:16px;
+  color: white;
+  text-align:center;
+  list-style-type: none;
+}
+
+#bore h4, h1{
+  color: white;
+  text-align: center;
+
 }
 
 
@@ -211,11 +244,6 @@ a{
   }  
 
 
-
-  body { 
-    background: linear-gradient(-55deg, #fce1f7, #b4ddf0, #8cd4ee, #abfae7) !important;
-    background-size: 400% 400%;
-  }
 
   body{
     background-size: 400% 400%;
@@ -275,6 +303,9 @@ a{
   #bore h4, p{
     font-size:10px !important;
   }
+  #bore p{
+    font-size:8px !important;
+  }
   #bore h4{
     line-height:2 !important;
   }
@@ -287,12 +318,12 @@ a{
   }
 
   a.button{
-    background-color: black;
+    background-color: transparent !important;
     transition-duration: 0.4s;
     border: none;
     border-radius: none !important;
     color: white;
-    padding: 10px 30px !important;
+    padding: 10px 5px !important;
     margin-top:80px !important;
     text-align: center;
     text-decoration: none;
@@ -305,8 +336,8 @@ a{
   }
 
   a.button:hover {
-    background-color:#f3dfb2; /* Green */
-    color: black;
+    background-color:#ffffff !important; /* Green */
+    color: black !important;
   }
 
   nav ul {
@@ -314,7 +345,7 @@ a{
     text-align: right;
     top: 0px;
     width: 100%;
-    background-color:#014871;
+    background-color:#393a3a;
     font-family: "comfortaa",sans-serif; 
     font-size: 8px; 
     padding-top:10px !important;
@@ -378,15 +409,3 @@ a{
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-

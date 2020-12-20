@@ -19,18 +19,36 @@ body{
 
 
 
+
 body {
-  font-size: 14px;
+  background: linear-gradient(-45deg, #000000, #302f2f, #3d3d3d, #000000);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  font-size: 20px;
   line-height: 1.5;
-  background-color:#f6f3ec;
-  padding-left:400px;
-  background-image: url("https://i.imgur.com/1OyZOFJ.jpg");
-  background-repeat: no-repeat; 
-  background-size: 100% 100%;
+  padding-left:50px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'comfortaa', sans-serif;
+  color: white;
 }
 
 h1 {
@@ -38,13 +56,14 @@ h1 {
   margin-bottom: .5em;
 }
 
+
 p {
   font-family: 'comfortaa', sans-serif;
   font-size: .8rem;
 }
 
 .container {
-  padding-top:100px;
+  padding-top:10px;
   max-width: 1024px;
   width: 90%;
   margin: 0 auto;
@@ -53,7 +72,7 @@ p {
 .timeline-item {
   padding: 3em 2em 2em;
   position: relative;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   border-left: 2px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -93,30 +112,6 @@ p {
 }
 
 
-nav ul {
-  position: fixed;
-  text-align: left;
-  top: 0px;
-  width: 100%;
-  background-color:transparent;
-  font-family: "comfortaa",sans-serif; 
-  font-size: 15px; 
-  padding-left: 380px;
-
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 30px; 
-}
-
-nav ul li a {
-  color: #363134;
-  text-decoration: none;  
-}
-nav ul li a:hover {
-  color: #ce8888;
-}
 
 
 @media screen and (min-width: 1400px) and (max-width: 3000px){
@@ -137,6 +132,56 @@ nav ul li a:hover {
   }
 }
 
+nav ul {
+  text-align: left;
+  top: 0px;
+  width: 100%;
+  background-color:transparent;
+  font-family: "comfortaa",sans-serif; 
+  font-size: 15px; 
+  padding-left: 300px;
+  padding-top: 10px;
+  transition: top 0.3s
+
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 30px; 
+  }
+  
+  nav ul li a {
+    color: #fdfdfd;
+    text-decoration: none;  
+  }
+  nav ul li a:hover {
+    color: #ce8888;
+  }
+
+
+  a.button{
+    background-color: transparent;
+    transition-duration: 0.4s;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    padding:8px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width:200px;
+}
+
+a.button:hover {
+    background-color:#ffffff; /* Green */
+    color: black;
+  }
 
 
 /*# sourceMappingURL=timeline.css.map */
