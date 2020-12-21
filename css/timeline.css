@@ -113,25 +113,6 @@ p {
 
 
 
-
-@media screen and (min-width: 1400px) and (max-width: 3000px){
-
-  body{
-    padding-left:650px;
-    padding-top:50px;
-  }
-
-  h1 {
-    font-size: 2rem;
-    margin-bottom: .5em;
-  }
-  
-  p {
-    font-family: 'comfortaa', sans-serif;
-    font-size: 1rem;
-  }
-}
-
 nav ul {
   text-align: left;
   top: 0px;
@@ -158,7 +139,6 @@ nav ul {
     color: #ce8888;
   }
 
-
   a.button{
     background-color: transparent;
     transition-duration: 0.4s;
@@ -182,6 +162,27 @@ a.button:hover {
     background-color:#ffffff; /* Green */
     color: black;
   }
+
+
+
+
+@media screen and (min-width: 1400px) and (max-width: 3000px){
+
+  body{
+    padding-left:650px;
+    padding-top:50px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: .5em;
+  }
+  
+  p {
+    font-family: 'comfortaa', sans-serif;
+    font-size: 1rem;
+  }
+}
 
 
 /*# sourceMappingURL=timeline.css.map */
