@@ -46,3 +46,21 @@
 </div>
 
 
+<script> 
+      window.onload = function() { 
+          $("html, body").animate({ 
+              scrollTop: $( 
+                'html, body').get(0).scrollHeight 
+          }, 7000); 
+      };  
+</script> 
+
+<script>
+var page = $("html, body");
+
+$(document).on('mousemove', function() {
+    page.stop();
+});
+</script>
+
+
